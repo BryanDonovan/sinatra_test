@@ -1,0 +1,6 @@
+database:
+  credentials:
+    database: sinatra_test
+    host: localhost
+    user: root
+    password:

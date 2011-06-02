@@ -1,0 +1,32 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activerecord (2.3.11)
+      activesupport (= 2.3.11)
+    activesupport (2.3.11)
+    cgi_multipart_eof_fix (2.5.0)
+    daemons (1.1.3)
+    fastthread (1.0.7)
+    gem_plugin (0.2.3)
+    mongrel (1.1.5)
+      cgi_multipart_eof_fix (>= 2.4)
+      daemons (>= 1.0.3)
+      fastthread (>= 1.0.1)
+      gem_plugin (>= 0.2.3)
+    mysql (2.8.1)
+    rack (1.3.0)
+    settingslogic (2.0.6)
+    sinatra (1.2.6)
+      rack (~> 1.1)
+      tilt (>= 1.2.2, < 2.0)
+    tilt (1.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activerecord (= 2.3.11)
+  mongrel (= 1.1.5)
+  mysql (= 2.8.1)
+  settingslogic
+  sinatra (= 1.2.6)
