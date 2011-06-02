@@ -32,6 +32,7 @@ end
 get '/foos/:name' do |name|
   # Reconnecting doesn't fix the issue:
   # ActiveRecord::Base.connection.reconnect! unless ActiveRecord::Base.connection.active?
+  # ActiveRecord::Base.connection.verify! also does not work.
   #
   # But establishing the connection directly works:
   #ar_connect
