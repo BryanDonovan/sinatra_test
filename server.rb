@@ -16,10 +16,12 @@ Dir.glob(['models'].map! {|d| File.join File.expand_path(File.dirname(__FILE__))
 def ar_connect
   db = Settings.database.credentials
   ActiveRecord::Base.establish_connection(
-    :adapter  => "mysql", 
-    :user     => db.user,
-    :database => db.database,
-    :password => db.password 
+    :adapter      => "mysql",
+    :user         => db.user,
+    :database     => db.database,
+    :password     => db.password ,
+    :wait_timeout => 3,
+    :pool         => '5'
   )
 end
 

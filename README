@@ -17,6 +17,9 @@ every 5th request or so. This application is an attempt to isolate the problem. 
 If I establish a new ActiveRecord connection on each request, the problem goes away.  
 Using ActiveRecord::Base.connection.reconnect! does not fix the issue.
 
+Update: Setting a wait_timeout and/or pool values in the ActiveRecord connection change this behavior 
+(not surprisingly).  See server.rb.
+
 =Key Gems
 
 The key gems used are:
